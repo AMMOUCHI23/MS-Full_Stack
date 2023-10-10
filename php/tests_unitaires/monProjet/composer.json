@@ -1,0 +1,17 @@
+{
+    "name": "ammouchi/mon-projet",
+    "autoload": {
+        "psr-4": {
+            "Ammouchi\\MonProjet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ammouchi Abdallah",
+            "email": "bily-f@hotmail.fr"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
