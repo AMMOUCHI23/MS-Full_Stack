@@ -117,14 +117,6 @@ if (@$quantite >= 1) {
         </form>
 
 
-
-
-
-
-
-
-
-
         <?php
         require_once("footer.php");
         ?>

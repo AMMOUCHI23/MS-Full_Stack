@@ -52,7 +52,6 @@ try {
      echo'</div>';
      echo'</div>';
      echo'</div>';
-     echo' </form>';
         }
         
    
