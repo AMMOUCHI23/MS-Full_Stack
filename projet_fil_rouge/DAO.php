@@ -143,7 +143,8 @@ function get_platEntrees(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit" class="border-0 text-primary" value="détails du plat" name="detail">';
+           // echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2 " >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
@@ -184,7 +185,8 @@ function get_platPrincipaux(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit"  class="border-0 text-primary" value="détails du plat" name="detail">';
+           // echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2" >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
@@ -223,7 +225,8 @@ function get_platSandwichs(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit" class="border-0 text-primary" value="détails du plat" name="detail">';
+            // echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2 " >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
@@ -262,7 +265,8 @@ function get_platSoupes(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit" class="border-0 text-primary" value="détails du plat" name="detail">';
+            //echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2" >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
@@ -301,7 +305,8 @@ function get_platDesserts(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit" class="border-0 text-primary" value="détails du plat" name="detail">';
+            //echo  '<a href="#"><small class="card-text " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2" >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
@@ -340,7 +345,8 @@ function get_platBoissons(){
             echo '<input type="hidden" value="'.$plat->libelle.'" name="nomPlat">';
             echo '<input type="hidden" value="'.$plat->image.'" name="nomImage">';
             echo '<input type="hidden" value="'.$plat->prix.'" name="prix">';
-            echo  '<a href="#"><small class="card-text  " >Cliquer pour plus de détails</small> </a>';
+            echo '<input type="submit" class="border-0 text-primary" value="détails du plat" name="detail">';
+           // echo  '<a href="#"><small class="card-text  " >Cliquer pour plus de détails</small> </a>';
             echo   '<p class="card-text my-2" id="prix_cafe_glace">'.$plat->prix.' €</p> ';
             echo   '<label  class="card-text h5 mx-2" >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';

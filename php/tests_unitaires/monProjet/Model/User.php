@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Model;
-
+use App\Model\InvalidArgumentException;
 class User
 {
     public int $age;

@@ -1,5 +1,11 @@
 <?php
 session_start();
+if(isset($_POST["detail"])){
+    $nomPlato = $_POST["nomPlat"];
+    $_SESSION["detail_plat"]=$nomPlato;
+    header("Location: detail.php");
+}
+
 if (isset($_POST["addpanier"])) {
     $quantite = $_POST["quantite"];
     $nomPlat = $_POST["nomPlat"];
