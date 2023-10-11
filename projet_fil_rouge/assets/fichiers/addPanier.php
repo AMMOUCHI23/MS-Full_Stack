@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(isset($_POST["detail"])){
+if (isset($_POST["detail"])) {
     $nomPlato = $_POST["nomPlat"];
-    $_SESSION["detail_plat"]=$nomPlato;
+    $_SESSION["detail_plat"] = $nomPlato;
     header("Location: detail.php");
 }
 
@@ -72,6 +72,10 @@ if (@$quantite >= 1) {
                             <th scope="col">Qantité</th>
                             <th scope="col">Sous total</th>
                             <th scope="col">Supprimer </th>
+                            <form action="">
+                                <input type="submit" value="supprimer">
+                            </form>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -85,6 +89,10 @@ if (@$quantite >= 1) {
                             echo '<td>' . $produit["prix"] . ' €</td>';
                             echo '<td>' . $produit["quantite"] . '</td>';
                             echo '<td>' . $produit["quantite"] * $produit["prix"] . ' €</td>';
+                            echo '<td> <form action="">
+                            <input type="submit" class="text-danger" value="supprimer">
+                         </form>
+                        </td>';
                             echo '</tr>';
                             $total = ($produit["quantite"] * $produit["prix"]) + $total;
                         }
@@ -97,23 +105,23 @@ if (@$quantite >= 1) {
         </div>
         <form action="commande.php" method="post">
 
-        <div class="row text-end my-5 ">
-            <div class="col-10">
-                <h3>Total : <?php echo $total ?> €</h3>
-            </div>
-
-            <div class="row text-center my-5 ">
-                <div class="col-6">
-                    <a href="../../index.php"><button type="button" class="btn btn-primary btn-lg">Continuer les achats</button></a>
-                </div>
-                <div class="col-6">
-                <input type="hidden" value="<?php echo $total ?>" name="total">
-                    <input type="submit" class="btn btn-success btn-lg" value="Passer la commande" name="commander">
+            <div class="row text-end my-5 ">
+                <div class="col-10">
+                    <h3>Total : <?php echo $total ?> €</h3>
                 </div>
 
-            </div>
+                <div class="row text-center my-5 ">
+                    <div class="col-6">
+                        <a href="../../index.php"><button type="button" class="btn btn-primary btn-lg">Continuer les achats</button></a>
+                    </div>
+                    <div class="col-6">
+                        <input type="hidden" value="<?php echo $total ?>" name="total">
+                        <input type="submit" class="btn btn-success btn-lg" value="Passer la commande" name="commander">
+                    </div>
 
-        </div>
+                </div>
+
+            </div>
         </form>
 
 

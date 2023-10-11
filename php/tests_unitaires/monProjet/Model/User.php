@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Model;
-use App\Model\InvalidArgumentException;
 class User
 {
     public int $age;
@@ -18,9 +17,9 @@ class User
         $this->nom = $nom;
     }
 
-    public function afficherNom(): string
+    Public function afficherNom(): string
     {
-        return "Je m'appelle " . $this->nom . ".";
+        return "Je m'appelle " . $this->nom . " et j'ai " . $this->age . " ans.";
     }
 
     public function afficherAge(): string
@@ -37,7 +36,7 @@ class User
 
     public function supprimerFilmsFavoris(string $films): bool
     {
-        if (!in_array($films, $this->films_favoris)) throw new InvalidArgumentException("Film inconnu: " . $films);
+        if (!in_array($films, $this->films_favoris)) throw new \Exception("Film inconnu: " . $films);
 
         unset($this->films_favoris[array_search($films, $this->films_favoris)]);
 
