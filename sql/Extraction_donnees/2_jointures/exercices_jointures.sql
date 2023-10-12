@@ -1,4 +1,4 @@
--- Active: 1693294985000@@127.0.0.1@3306@exemple
+-- Active: 1697035567019@@127.0.0.1@3306@the_district_creation
 
 -- 1. Rechercher le prénom des employés et le numéro de la région de leur département.
 SELECT e.prenom, d.noregion
@@ -182,3 +182,6 @@ where titre = "representant");
 commission renseignés*/
 select COUNT(salaire), COUNT(tauxcom)
 FROM employe;
+
+
+select *, MAX(prix)  from plat 

@@ -1,5 +1,8 @@
 <?php
 // Fonction pour afficher six catégories actives les plus populaires
+
+use phpDocumentor\Reflection\Location;
+
 function get_categoriePopulaire(){
     try {
         require("connexion.php");
@@ -149,6 +152,7 @@ function get_platEntrees(){
             echo   '<label  class="card-text h5 mx-2 " >Quantité</label>';
             echo '<input type="number" class="quantite text-center" placeholder="0" name="quantite" >';
             echo '<input type="submit" class="btn btn-primary mx-3 my-2" value="Ajouter au panier" name="addpanier">';
+            
             echo '</div>';
            
             echo' </form>';
