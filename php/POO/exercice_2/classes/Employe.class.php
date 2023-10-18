@@ -66,7 +66,7 @@
         // 2. Calcule de la prime de fin de l'année
         public function prime()
         {
-            $prime = ($this->salaire * 0.05) + (0.02 * $this->salaire * $this->enciente());
+            @$prime = ($this->salaire * 0.05) + (0.02 * $this->salaire * $this->enciente());
             echo "La prime de fin de l'année est : " . $prime . "<br>";
             $date1 = new DateTime();
             $date2 = new DateTime("11/30");
